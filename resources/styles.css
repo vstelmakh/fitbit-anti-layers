@@ -19,7 +19,7 @@
   height: 32;
 }
 
-#activity .value {
+#activityValue {
   x: 50%-40;
   text-anchor: end;
   font-size: 32;
@@ -28,39 +28,33 @@
   fill: #ffffff;
 }
 
-#activity .icons {
+#activityIcons {
   x: 50%-20;
   y: 2;
 }
 
-#activity .icons .heart {
-  x: 0;
+#activityIcons image {
   width: 32;
   height: 32;
+  opacity: 0.5;
+}
+
+#heart {
+  x: 0;
   /*fill: #f74172;*/
   fill: fb-magenta;
-  opacity: 0.5;
 }
 
-#activity .icons .footsteps {
+#steps {
   x: 50;
-  width: 32;
-  height: 32;
   /*fill: #2cc4e9;*/
   fill: fb-blue;
-  opacity: 0.5;
 }
 
-#activity .icons .flame {
+#flame {
   x: 100;
-  width: 32;
-  height: 32;
   /*fill: #f99438;*/
   fill: fb-orange;
-  opacity: 0.5;
 }
 
-#activity .icons .active {
-  opacity: 1;
-}
 
