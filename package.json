@@ -5,7 +5,10 @@
     "appDisplayName": "Anti Layers",
     "iconFile": "resources/icon.png",
     "wipeColor": "",
-    "requestedPermissions": [],
+    "requestedPermissions": [
+      "access_heart_rate",
+      "access_activity"
+    ],
     "buildTargets": [
       "gemini",
       "higgs",

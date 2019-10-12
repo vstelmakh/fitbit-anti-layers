@@ -1,7 +1,9 @@
 export { AbstractState };
 
 class AbstractState {
-  
+
+  _iconElement;
+
   constructor(iconElement) {
     this._iconElement = iconElement;
   }
