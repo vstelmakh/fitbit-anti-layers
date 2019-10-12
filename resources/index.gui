@@ -1,0 +1,12 @@
+<svg id="background">
+  <text id="time" />
+  
+  <section id="activity">
+    <text class="value">68 BPM</text>
+    <section class="icons">
+      <image href="images/stat_hr_solid_32px.png" class="heart active" />
+      <image href="images/stat_steps_solid_32px.png" class="footsteps active" />
+      <image href="images/stat_cals_solid_32px.png" class="flame active" />
+    </section>
+  </section>
+</svg>

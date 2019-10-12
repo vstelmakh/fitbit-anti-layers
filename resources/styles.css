@@ -1,0 +1,66 @@
+#background {
+  viewport-fill: #000000;
+}
+
+#time {
+  font-size: 100;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: middle;
+  x: 50%;
+  y: 50%+30;
+  fill: #ffffff;
+}
+
+#activity {
+  x: 0;
+  y: 100%-50;
+  width: 100%;
+  height: 32;
+}
+
+#activity .value {
+  x: 50%-40;
+  text-anchor: end;
+  font-size: 32;
+  font-family: Tungsten-Medium;
+  /*font-family: Seville-Bold;*/
+  fill: #ffffff;
+}
+
+#activity .icons {
+  x: 50%-20;
+  y: 2;
+}
+
+#activity .icons .heart {
+  x: 0;
+  width: 32;
+  height: 32;
+  /*fill: #f74172;*/
+  fill: fb-magenta;
+  opacity: 0.5;
+}
+
+#activity .icons .footsteps {
+  x: 50;
+  width: 32;
+  height: 32;
+  /*fill: #2cc4e9;*/
+  fill: fb-blue;
+  opacity: 0.5;
+}
+
+#activity .icons .flame {
+  x: 100;
+  width: 32;
+  height: 32;
+  /*fill: #f99438;*/
+  fill: fb-orange;
+  opacity: 0.5;
+}
+
+#activity .icons .active {
+  opacity: 1;
+}
+
