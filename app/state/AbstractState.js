@@ -9,10 +9,18 @@ class AbstractState {
     _iconElement;
 
     /**
-     * @param {Element} iconElement - Icon that represents current state
+     * @type {Element}
+     * @protected
      */
-    constructor(iconElement) {
+    _valueElement;
+
+    /**
+     * @param {Element} iconElement - Icon that represents current state
+     * @param {Element} valueElement - Element to print text value
+     */
+    constructor(iconElement, valueElement) {
         this._iconElement = iconElement;
+        this._valueElement = valueElement;
     }
 
     /**
@@ -27,5 +35,6 @@ class AbstractState {
      */
     stop() {
         this._iconElement.style.opacity = 0.5;
+        this._valueElement.text = '';
     }
 }

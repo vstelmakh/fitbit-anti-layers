@@ -20,12 +20,6 @@ class HeartRateState extends AbstractState {
     _batch = 1;
 
     /**
-     * @type {Element}
-     * @private
-     */
-    _valueElement;
-
-    /**
      * @type {BodyPresenceSensor}
      * @private
      */
@@ -42,9 +36,7 @@ class HeartRateState extends AbstractState {
      * @param {Element} valueElement - Element to print text value
      */
     constructor(iconElement, valueElement) {
-        super(iconElement);
-
-        this._valueElement = valueElement;
+        super(iconElement, valueElement);
 
         if (BodyPresenceSensor && appbit.permissions.granted('access_activity')) {
             this._bodyPresenceSensor = new BodyPresenceSensor();
@@ -82,8 +74,6 @@ class HeartRateState extends AbstractState {
     }
 
     stop() {
-        super.stop();
-
         if (this._bodyPresenceSensor) {
             this._bodyPresenceSensor.stop();
         }
@@ -92,7 +82,7 @@ class HeartRateState extends AbstractState {
             this._heartRateSensor.stop();
         }
 
-        this._valueElement.text = '';
+        super.stop();
     }
 
     /**

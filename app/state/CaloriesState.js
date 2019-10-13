@@ -20,18 +20,11 @@ class CaloriesState extends AbstractState {
     _intervalTimeMs = 2000;
 
     /**
-     * @type {Element}
-     * @private
-     */
-    _valueElement;
-
-    /**
      * @param {Element} iconElement - Icon that represents current state
      * @param {Element} valueElement - Element to print text value
      */
     constructor(iconElement, valueElement) {
-        super(iconElement);
-        this._valueElement = valueElement;
+        super(iconElement, valueElement);
     }
 
     start() {
@@ -46,9 +39,8 @@ class CaloriesState extends AbstractState {
     }
 
     stop() {
-        super.stop();
         clearInterval(this._interval);
-        this._valueElement.text = '';
+        super.stop();
     }
 
     /**
