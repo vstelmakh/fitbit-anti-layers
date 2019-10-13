@@ -25,14 +25,14 @@ clock.ontick = (evt) => {
     time.text = `${hours}:${mins}`;
 };
 
-const activityValueElement = document.getElementById('activityValue');
 
 import {StateManager} from './state/StateManager';
 import {HeartRateState} from './state/HeartRateState';
 import {StepsState} from './state/StepsState';
 import {CaloriesState} from './state/CaloriesState';
 
-let stateManager = new StateManager();
+const activityValueElement = document.getElementById('activityValue');
+const stateManager = new StateManager();
 
 stateManager.addState(new HeartRateState(
     document.getElementById('heart'),
