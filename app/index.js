@@ -1,9 +1,13 @@
 import document from 'document';
+import {Date} from './clock/Date';
 import {Time} from './clock/Time';
 import {StateManager} from './state/StateManager';
 import {HeartRateState} from './state/HeartRateState';
 import {StepsState} from './state/StepsState';
 import {CaloriesState} from './state/CaloriesState';
+
+const dateElement = document.getElementById('date');
+new Date(dateElement);
 
 const timeElement = document.getElementById('time');
 new Time(timeElement);

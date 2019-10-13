@@ -2,13 +2,23 @@
     viewport-fill: #000000;
 }
 
-#time {
-    font-size: 100;
-    font-family: System-Bold;
-    text-length: 32;
+#date {
+    text-length: 6;
+    x: 50%;
+    y: 40;
     text-anchor: middle;
+    font-size: 32;
+    font-family: Tungsten-Medium;
+    fill: #ffffff;
+}
+
+#time {
+    text-length: 5;
     x: 50%;
     y: 50%+30;
+    text-anchor: middle;
+    font-size: 100;
+    font-family: System-Bold;
     fill: #ffffff;
 }
 

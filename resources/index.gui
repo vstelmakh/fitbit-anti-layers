@@ -1,4 +1,5 @@
 <svg id="background">
+    <text id="date"/>
     <text id="time"/>
 
     <section id="activity">
