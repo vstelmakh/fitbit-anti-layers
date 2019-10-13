@@ -2,7 +2,7 @@
 Fitbit Versa clock face inspired by [Layers](https://gallery.fitbit.com/details/0000146f-0000-4000-8000-000000f17b17) without overlapping clock numbers.  
 ![screenshot](screenshot.png "Anti Layers - clock face screenshot")  
   
-Clock face in Fitbit gallery: [Anti Layers](https://gallery.fitbit.com)  
+Clock face in Fitbit gallery: [Not available yet](https://gallery.fitbit.com)  
 
 ## Build & Install
 ### Prerequisites
