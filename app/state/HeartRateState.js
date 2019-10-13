@@ -69,9 +69,6 @@ class HeartRateState extends AbstractState {
         }
     }
 
-    /**
-     * Start state actions
-     */
     start() {
         super.start();
 
@@ -84,9 +81,6 @@ class HeartRateState extends AbstractState {
         }
     }
 
-    /**
-     * Stop state actions
-     */
     stop() {
         super.stop();
 

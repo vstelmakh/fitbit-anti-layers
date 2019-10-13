@@ -14,16 +14,10 @@ class CaloriesState extends AbstractState {
         this._valueElement = valueElement;
     }
 
-    /**
-     * Start state actions
-     */
     start() {
         super.start();
     }
 
-    /**
-     * Stop state actions
-     */
     stop() {
         super.stop();
     }

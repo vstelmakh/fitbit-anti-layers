@@ -33,9 +33,6 @@ class StepsState extends AbstractState {
         this._valueElement = valueElement;
     }
 
-    /**
-     * Start state actions
-     */
     start() {
         super.start();
         this._updateStepsValue();
@@ -45,15 +42,15 @@ class StepsState extends AbstractState {
         }, this._intervalTimeMs);
     }
 
-    /**
-     * Stop state actions
-     */
     stop() {
         super.stop();
         clearInterval(this._interval);
         this._valueElement.text = '';
     }
 
+    /**
+     * @private
+     */
     _updateStepsValue() {
         this._valueElement.text = formatNumber(today.adjusted.steps);
     }

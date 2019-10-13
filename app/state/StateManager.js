@@ -32,9 +32,6 @@ class StateManager {
         }
     }
 
-    /**
-     * Stop current and start next state
-     */
     startNextState() {
         this._getCurrentState().stop();
         this._index++;
