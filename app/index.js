@@ -1,7 +1,7 @@
 import clock from 'clock';
 import document from 'document';
 import {preferences} from 'user-settings';
-import * as util from '../common/utils';
+import * as utils from '../common/utils';
 
 // Update the clock every minute
 clock.granularity = 'minutes';
@@ -18,9 +18,9 @@ clock.ontick = (evt) => {
         hours = hours % 12 || 12;
     } else {
         // 24h format
-        hours = util.zeroPad(hours);
+        hours = utils.zeroPad(hours);
     }
-    let mins = util.zeroPad(today.getMinutes());
+    let mins = utils.zeroPad(today.getMinutes());
 
     time.text = `${hours}:${mins}`;
 };
