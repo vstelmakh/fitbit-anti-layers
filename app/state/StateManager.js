@@ -6,6 +6,9 @@ class StateManager {
 
   addState(state) {
     this.states.push(state);
+    if (this.states.length === 1) {
+      this._getCurrentState().start();
+    }
   }
 
   startNextState() {
