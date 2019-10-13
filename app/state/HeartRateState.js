@@ -8,13 +8,40 @@ import {BodyPresenceSensor} from 'body-presence';
 
 class HeartRateState extends AbstractState {
 
-    // For frequency and batch info see: https://dev.fitbit.com/build/guides/sensors/heart-rate/
+    /**
+     * @type {number} - for frequency and batch info see: https://dev.fitbit.com/build/guides/sensors/heart-rate/
+     * @private
+     */
     _frequency = 1;
+
+    /**
+     * @type {number} - for frequency and batch info see: https://dev.fitbit.com/build/guides/sensors/heart-rate/
+     * @private
+     */
     _batch = 1;
+
+    /**
+     * @type {Element}
+     * @private
+     */
     _valueElement;
+
+    /**
+     * @type {BodyPresenceSensor}
+     * @private
+     */
     _bodyPresenceSensor;
+
+    /**
+     * @type {HeartRateSensor}
+     * @private
+     */
     _heartRateSensor;
 
+    /**
+     * @param {Element} iconElement - Icon that represents current state
+     * @param {Element} valueElement - Element to print text value
+     */
     constructor(iconElement, valueElement) {
         super(iconElement);
 
@@ -47,6 +74,9 @@ class HeartRateState extends AbstractState {
         }
     }
 
+    /**
+     * Start state actions
+     */
     start() {
         super.start();
 
@@ -59,6 +89,9 @@ class HeartRateState extends AbstractState {
         }
     }
 
+    /**
+     * Stop state actions
+     */
     stop() {
         super.stop();
 
@@ -73,10 +106,18 @@ class HeartRateState extends AbstractState {
         this._valueElement.text = '';
     }
 
+    /**
+     * @param {string} value
+     * @private
+     */
     _setHeartRateValue(value) {
         this._valueElement.text = value + ' BPM';
     }
 
+    /**
+     * @returns {boolean}
+     * @private
+     */
     _hasToDisplayHeartRate() {
         let isOnWrist = (this._bodyPresenceSensor) ? this._bodyPresenceSensor.present : true;
         return display.on && isOnWrist;
