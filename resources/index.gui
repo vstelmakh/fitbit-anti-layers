@@ -1,14 +1,14 @@
 <svg id="background">
-  <text id="time"/>
-  
-  <section id="activity">
-    <text id="activityValue" text-length="8"></text>
-    <section id="activityIcons">
-      <image id="heart" href="images/stat_hr_solid_32px.png"/>
-      <image id="steps" href="images/stat_steps_solid_32px.png"/>
-      <image id="flame" href="images/stat_cals_solid_32px.png"/>
+    <text id="time"/>
+
+    <section id="activity">
+        <text id="activityValue" text-length="8"></text>
+        <section id="activityIcons">
+            <image id="heart" href="images/stat_hr_solid_32px.png"/>
+            <image id="steps" href="images/stat_steps_solid_32px.png"/>
+            <image id="flame" href="images/stat_cals_solid_32px.png"/>
+        </section>
     </section>
-  </section>
-  
-  <use id="screenButton" href="#push-button" y="0" height="100%" opacity="0" />
+
+    <use id="screenButton" href="#push-button" y="0" height="100%" opacity="0" />
 </svg>

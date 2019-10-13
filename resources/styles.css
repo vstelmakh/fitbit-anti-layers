@@ -1,60 +1,60 @@
 #background {
-  viewport-fill: #000000;
+    viewport-fill: #000000;
 }
 
 #time {
-  font-size: 100;
-  font-family: System-Bold;
-  text-length: 32;
-  text-anchor: middle;
-  x: 50%;
-  y: 50%+30;
-  fill: #ffffff;
+    font-size: 100;
+    font-family: System-Bold;
+    text-length: 32;
+    text-anchor: middle;
+    x: 50%;
+    y: 50%+30;
+    fill: #ffffff;
 }
 
 #activity {
-  x: 0;
-  y: 100%-50;
-  width: 100%;
-  height: 32;
+    x: 0;
+    y: 100%-50;
+    width: 100%;
+    height: 32;
 }
 
 #activityValue {
-  x: 50%-40;
-  text-anchor: end;
-  font-size: 32;
-  font-family: Tungsten-Medium;
-  /*font-family: Seville-Bold;*/
-  fill: #ffffff;
+    x: 50%-40;
+    text-anchor: end;
+    font-size: 32;
+    font-family: Tungsten-Medium;
+    /*font-family: Seville-Bold;*/
+    fill: #ffffff;
 }
 
 #activityIcons {
-  x: 50%-20;
-  y: 2;
+    x: 50%-20;
+    y: 2;
 }
 
 #activityIcons image {
-  width: 32;
-  height: 32;
-  opacity: 0.5;
+    width: 32;
+    height: 32;
+    opacity: 0.5;
 }
 
 #heart {
-  x: 0;
-  /*fill: #f74172;*/
-  fill: fb-magenta;
+    x: 0;
+    /*fill: #f74172;*/
+    fill: fb-magenta;
 }
 
 #steps {
-  x: 50;
-  /*fill: #2cc4e9;*/
-  fill: fb-blue;
+    x: 50;
+    /*fill: #2cc4e9;*/
+    fill: fb-blue;
 }
 
 #flame {
-  x: 100;
-  /*fill: #f99438;*/
-  fill: fb-orange;
+    x: 100;
+    /*fill: #f99438;*/
+    fill: fb-orange;
 }
 
 
