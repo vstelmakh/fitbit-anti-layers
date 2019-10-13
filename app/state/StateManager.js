@@ -1,5 +1,7 @@
 export {StateManager};
 
+import display from 'display';
+
 class StateManager {
 
     /**
@@ -12,6 +14,13 @@ class StateManager {
      * @private
      */
     _index = 0;
+
+    constructor() {
+        display.addEventListener('change', () => {
+            let currentState = this._getCurrentState();
+            display.on ? currentState.start() : currentState.stop();
+        });
+    }
 
     /**
      * @param {AbstractState} state

@@ -2,7 +2,6 @@ export {HeartRateState};
 
 import {AbstractState} from './AbstractState';
 import {me as appbit} from 'appbit';
-import {display} from 'display';
 import {HeartRateSensor} from 'heart-rate';
 import {BodyPresenceSensor} from 'body-presence';
 
@@ -57,16 +56,12 @@ class HeartRateState extends AbstractState {
                 this._setHeartRateValue(this._heartRateSensor.heartRate);
             });
 
-            display.addEventListener('change', () => {
-                this._hasToDisplayHeartRate() ? this._heartRateSensor.start() : this._heartRateSensor.stop();
-            });
-
             if (this._bodyPresenceSensor) {
                 this._bodyPresenceSensor.addEventListener("reading", () => {
                     if (!this._bodyPresenceSensor.present) {
                         this._setHeartRateValue('--');
                     }
-                    this._hasToDisplayHeartRate() ? this._heartRateSensor.start() : this._heartRateSensor.stop();
+                    this._isOnWrist() ? this._heartRateSensor.start() : this._heartRateSensor.stop();
                 });
             }
         } else {
@@ -118,8 +113,7 @@ class HeartRateState extends AbstractState {
      * @returns {boolean}
      * @private
      */
-    _hasToDisplayHeartRate() {
-        let isOnWrist = (this._bodyPresenceSensor) ? this._bodyPresenceSensor.present : true;
-        return display.on && isOnWrist;
+    _isOnWrist() {
+        return (this._bodyPresenceSensor) ? this._bodyPresenceSensor.present : true;
     }
 }
