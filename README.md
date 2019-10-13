@@ -1,5 +1,8 @@
 # Anti Layers
-Fitbit Ionic and Versa clock face inspired by [Layers](https://gallery.fitbit.com/details/0000146f-0000-4000-8000-000000f17b17) without overlapping clock numbers.  
+Fitbit Versa clock face inspired by [Layers](https://gallery.fitbit.com/details/0000146f-0000-4000-8000-000000f17b17) without overlapping clock numbers.  
+![screenshot](screenshot.png "Anti Layers - clock face screenshot")  
+  
+Clock face in Fitbit gallery: [Anti Layers](https://gallery.fitbit.com)  
 
 ## Build & Install
 ### Prerequisites
@@ -31,4 +34,4 @@ For more info see [Command Line Interface Guide](https://dev.fitbit.com/build/gu
 
 ## Credits
 [Volodymyr Stelmakh](https://github.com/vstelmakh)  
-Licensed under the MIT License. See [LICENSE](https://github.com/vstelmakh/fitbit-anti-layers/blob/master/LICENSE) for more information.  
+Licensed under the MIT License. See [LICENSE](LICENSE) for more information.  
