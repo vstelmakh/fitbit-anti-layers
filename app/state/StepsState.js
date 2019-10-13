@@ -10,13 +10,13 @@ class StepsState extends AbstractState {
      * @type {number}
      * @private
      */
-    _updateInterval;
+    _interval;
 
     /**
      * @type {int}
      * @private
      */
-    _updateIntervalTimeMs = 2000;
+    _intervalTimeMs = 2000;
 
     /**
      * @type {Element}
@@ -40,9 +40,9 @@ class StepsState extends AbstractState {
         super.start();
         this._updateStepsValue();
 
-        this._updateInterval = setInterval(() => {
+        this._interval = setInterval(() => {
             this._updateStepsValue();
-        }, this._updateIntervalTimeMs);
+        }, this._intervalTimeMs);
     }
 
     /**
@@ -50,7 +50,7 @@ class StepsState extends AbstractState {
      */
     stop() {
         super.stop();
-        clearInterval(this._updateInterval);
+        clearInterval(this._interval);
         this._valueElement.text = '';
     }
 
