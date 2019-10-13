@@ -1,6 +1,7 @@
 export {CaloriesState};
 
 import {AbstractState} from './AbstractState';
+import {me as appbit} from 'appbit';
 import {today} from 'user-activity';
 import {formatNumber} from '../../common/utils';
 
@@ -37,9 +38,11 @@ class CaloriesState extends AbstractState {
         super.start();
         this._updateCaloriesValue();
 
-        this._interval = setInterval(() => {
-            this._updateCaloriesValue();
-        }, this._intervalTimeMs);
+        if (appbit.permissions.granted("access_activity")) {
+            this._interval = setInterval(() => {
+                this._updateCaloriesValue();
+            }, this._intervalTimeMs);
+        }
     }
 
     stop() {

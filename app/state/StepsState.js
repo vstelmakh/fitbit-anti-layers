@@ -1,6 +1,7 @@
 export {StepsState};
 
 import {AbstractState} from './AbstractState';
+import {me as appbit} from 'appbit';
 import {today} from 'user-activity';
 import {formatNumber} from '../../common/utils';
 
@@ -37,9 +38,11 @@ class StepsState extends AbstractState {
         super.start();
         this._updateStepsValue();
 
-        this._interval = setInterval(() => {
-            this._updateStepsValue();
-        }, this._intervalTimeMs);
+        if (appbit.permissions.granted("access_activity")) {
+            this._interval = setInterval(() => {
+                this._updateStepsValue();
+            }, this._intervalTimeMs);
+        }
     }
 
     stop() {
