@@ -33,4 +33,5 @@ stateManager.addState(new CaloriesState(
 const screenButton = document.getElementById('screenButton');
 screenButton.onactivate = function (e) {
     stateManager.startNextState();
+    activityValueElement.animate('enable');
 };

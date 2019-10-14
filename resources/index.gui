@@ -3,7 +3,11 @@
     <text id="time"/>
 
     <section id="activity">
-        <text id="activityValue" text-length="8"></text>
+        <text id="activityValue" text-length="8">
+            <animate attributeName="opacity" begin="enable" from="0" to="1" dur="0.3" />
+            <animate attributeName="x" begin="enable" from="0" to="50%-40" dur="0.25" />
+        </text>
+
         <section id="activityIcons">
             <image id="heart" href="images/stat_hr_solid_32px.png"/>
             <image id="steps" href="images/stat_steps_solid_32px.png"/>
