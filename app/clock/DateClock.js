@@ -1,9 +1,9 @@
-export {Date};
+export {DateClock};
 
 import {AbstractClock} from "./AbstractClock";
 import {zeroPad} from '../../common/utils';
 
-class Date extends AbstractClock {
+class DateClock extends AbstractClock {
 
     /**
      * @type {Element}
@@ -41,6 +41,11 @@ class Date extends AbstractClock {
         this._valueElement.text = this._getFormattedDate(date);
     }
 
+    /**
+     * @param {Date} date
+     * @returns {string}
+     * @private
+     */
     _getFormattedDate(date) {
         let month = this._monthMap[date.getMonth()];
         let day = zeroPad(date.getDate());

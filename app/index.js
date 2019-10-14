@@ -1,16 +1,16 @@
 import document from 'document';
-import {Date} from './clock/Date';
-import {Time} from './clock/Time';
+import {DateClock} from './clock/DateClock';
+import {TimeClock} from './clock/TimeClock';
 import {StateManager} from './state/StateManager';
 import {HeartRateState} from './state/HeartRateState';
 import {StepsState} from './state/StepsState';
 import {CaloriesState} from './state/CaloriesState';
 
 const dateElement = document.getElementById('date');
-new Date(dateElement);
+new DateClock(dateElement);
 
 const timeElement = document.getElementById('time');
-new Time(timeElement);
+new TimeClock(timeElement);
 
 const activityValueElement = document.getElementById('activityValue');
 const stateManager = new StateManager();

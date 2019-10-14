@@ -1,10 +1,10 @@
-export {Time};
+export {TimeClock};
 
 import {AbstractClock} from "./AbstractClock";
 import {preferences} from 'user-settings';
 import {zeroPad} from '../../common/utils';
 
-class Time extends AbstractClock {
+class TimeClock extends AbstractClock {
 
     /**
      * @type {Element}
