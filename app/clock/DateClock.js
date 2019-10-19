@@ -14,7 +14,7 @@ class DateClock extends AbstractClock {
     /**
      * @private
      */
-    _monthMap = {0: 'JAN', 1: 'FEB', 2: 'MAR', 3: 'APR', 4: 'MAY', 5: 'JUN', 6: 'JUL', 7: 'AUG', 8: 'SEP', 9: 'OCT', 10: 'NOV', 11: 'DEC'};
+    _monthNames = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
 
     /**
      * @param {Element} valueElement
@@ -47,7 +47,7 @@ class DateClock extends AbstractClock {
      * @private
      */
     _getFormattedDate(date) {
-        let month = this._monthMap[date.getMonth()];
+        let month = this._monthNames[date.getMonth()];
         let day = zeroPad(date.getDate());
         return month + ' ' + day;
     }
