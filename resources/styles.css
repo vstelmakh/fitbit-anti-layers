@@ -73,20 +73,17 @@
 
 #heart {
     x: 0;
-    /*fill: #f74172;*/
-    fill: fb-magenta;
+    fill: #f80070;
 }
 
 #steps {
     x: 50;
-    /*fill: #2cc4e9;*/
-    fill: fb-blue;
+    fill: #14d3f5;
 }
 
 #flame {
     x: 100;
-    /*fill: #f99438;*/
-    fill: fb-orange;
+    fill: #fc6b3a;
 }
 
 
