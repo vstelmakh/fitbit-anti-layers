@@ -13,14 +13,35 @@
     fill: #ffffff;
 }
 
-#time {
-    text-length: 5;
-    x: 50%;
-    y: 50%+30;
-    text-anchor: middle;
-    font-size: 100;
-    font-family: System-Bold;
+#time image {
+    y: 50%-50;
+    height: 97;
     fill: #ffffff;
+}
+
+#time image.number {
+    width: 55;
+}
+
+#hour1 {
+    x: 25;
+}
+
+#hour2 {
+    x: 80;
+}
+
+#timeSeparator {
+    x: 140;
+    width: 20;
+}
+
+#minute1 {
+    x: 165;
+}
+
+#minute2 {
+    x: 220;
 }
 
 #activity {

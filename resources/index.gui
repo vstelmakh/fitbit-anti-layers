@@ -1,6 +1,13 @@
 <svg id="background">
     <text id="date"/>
-    <text id="time"/>
+
+    <section id="time">
+        <image id="hour1" class="number" href="images/time/0.png"/>
+        <image id="hour2" class="number" href="images/time/0.png"/>
+        <image id="timeSeparator" href="images/time/colon.png"/>
+        <image id="minute1" class="number" href="images/time/0.png"/>
+        <image id="minute2" class="number" href="images/time/0.png"/>
+    </section>
 
     <section id="activity">
         <text id="activityValue" text-length="8">
