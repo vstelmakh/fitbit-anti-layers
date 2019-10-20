@@ -49,7 +49,7 @@ class HeartRateState extends AbstractState {
             });
 
             if (this._bodyPresenceSensor) {
-                this._bodyPresenceSensor.addEventListener("reading", () => {
+                this._bodyPresenceSensor.addEventListener('reading', () => {
                     if (!this._bodyPresenceSensor.present) {
                         this._setHeartRateValue('--');
                     }
