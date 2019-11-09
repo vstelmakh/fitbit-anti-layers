@@ -34,7 +34,7 @@ class TimeImageClock extends AbstractClock {
      * @param {Element} hourImage1
      * @param {Element} hourImage2
      * @param {Element} minuteImage1
-     * @param {Element} minuteImage1
+     * @param {Element} minuteImage2
      */
     constructor(hourImage1, hourImage2, minuteImage1, minuteImage2) {
         super();
